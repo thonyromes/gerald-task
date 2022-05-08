@@ -30,6 +30,8 @@
     expo start
     ```
     
-5. Commands
-
+5. Commands in running expo terminal
+  
+   ```bash
     'a' to run in Android
+   ```
