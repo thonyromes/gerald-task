@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "gerald-task",
+    "slug": "gerald-task",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
