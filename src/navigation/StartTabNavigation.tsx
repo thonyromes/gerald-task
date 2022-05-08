@@ -12,7 +12,9 @@ const StartTabNavigation = () => {
     <Tab.Navigator
       screenOptions={{
         headerShown: false,
-        tabBarIcon: ({ focused }) => null,
+        tabBarLabelStyle: {
+          fontSize: 16,
+        },
       }}
     >
       <Tab.Screen name="Home" component={HomeStackNavigation} />

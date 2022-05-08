@@ -20,6 +20,9 @@ export type StartTabParamList = {
 
 export type RootDrawerParamList = {
   Start: NavigatorScreenParams<StartTabParamList>;
+  YourCart: NavigatorScreenParams<StartTabParamList>;
+  Favorites: NavigatorScreenParams<StartTabParamList>;
+  YourOrders: NavigatorScreenParams<StartTabParamList>;
 };
 
 export type RootDrawerScreenProps<T extends keyof RootDrawerParamList> =
