@@ -35,11 +35,22 @@ export type StartTabScreenProps<T extends keyof StartTabParamList> =
   >;
 
 export type HomeStackScreenProps<T extends keyof HomeStackParamList> =
-  StackScreenProps<HomeStackParamList, T>;
+  CompositeScreenProps<
+    StackScreenProps<HomeStackParamList, T>,
+    CompositeScreenProps<
+      BottomTabScreenProps<StartTabParamList>,
+      DrawerScreenProps<RootDrawerParamList>
+    >
+  >;
 
 export type ContactStackScreenProps<T extends keyof ContactStackParamList> =
-  StackScreenProps<ContactStackParamList, T>;
-
+  CompositeScreenProps<
+    StackScreenProps<ContactStackParamList, T>,
+    CompositeScreenProps<
+      BottomTabScreenProps<StartTabParamList>,
+      DrawerScreenProps<RootDrawerParamList>
+    >
+  >;
 declare global {
   namespace ReactNavigation {
     interface RootParamList extends RootDrawerParamList {}
