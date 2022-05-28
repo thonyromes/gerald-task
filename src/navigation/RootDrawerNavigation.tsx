@@ -7,8 +7,8 @@ import {
   DrawerItemList,
 } from '@react-navigation/drawer';
 
-import type { RootDrawerParamList } from './types';
-import { StartTabNavigation } from './StartTabNavigation';
+import type { RootDrawerParamList } from '@/src/navigation/types';
+import { StartTabNavigation } from '@/src/navigation/StartTabNavigation';
 
 const CustomDrawerContent = (props: DrawerContentComponentProps) => {
   return (
@@ -20,7 +20,7 @@ const CustomDrawerContent = (props: DrawerContentComponentProps) => {
     >
       <DrawerItem
         label="Beka"
-        onPress={undefined}
+        onPress={() => {}}
         style={{
           marginBottom: 24,
         }}
@@ -33,7 +33,7 @@ const CustomDrawerContent = (props: DrawerContentComponentProps) => {
       />
       <DrawerItemList {...props} />
       <DrawerItem
-        onPress={undefined}
+        onPress={() => {}}
         label=""
         labelStyle={{
           backgroundColor: 'rgba(255, 255, 255, 0.2)',

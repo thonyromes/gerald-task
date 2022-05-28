@@ -1,9 +1,9 @@
 import * as React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
-import type { StartTabParamList } from './types';
-import { HomeStackNavigation } from './HomeStackNavigation';
-import { ContactStackNavigation } from './ContactStackNavigation';
+import type { StartTabParamList } from '@/src/navigation/types';
+import { HomeStackNavigation } from '@/src/navigation/HomeStackNavigation';
+import { ContactStackNavigation } from '@/src/navigation/ContactStackNavigation';
 
 const Tab = createBottomTabNavigator<StartTabParamList>();
 
